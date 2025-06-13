@@ -1,0 +1,24 @@
+{
+  "chrome": {
+      "default": "latest",
+      "versions": {
+          "latest": {
+              "image": "selenoid/chrome:latest",
+              "port": "4444",
+              "path": "/wd/hub",
+              "tmpfs": {"/tmp": "size=512m"}
+          }
+      }
+  },
+  "firefox": {
+      "default": "latest",
+      "versions": {
+          "latest": {
+              "image": "selenoid/firefox:latest",
+              "port": "4444",
+              "path": "/wd/hub",
+              "tmpfs": {"/tmp": "size=512m"}
+          }
+      }
+  }
+}
